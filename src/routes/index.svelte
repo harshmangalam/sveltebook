@@ -32,12 +32,7 @@
             </div>
           </Login>
         </div>
-        <div class="mt-4 text-gray-400 text-center">
-            Sveltebook &copy; {new Date().getFullYear()}
-          </div>
       </section>
     </div>
-
-   
   </div>
 </div>
