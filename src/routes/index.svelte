@@ -1,5 +1,6 @@
 <script>
   import Login from "$lib/components/Login.svelte";
+  
 </script>
 
 <div class="bg-gray-100 min-h-screen flex place-items-center px-2">
