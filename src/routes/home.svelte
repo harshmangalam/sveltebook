@@ -57,7 +57,7 @@
       Welcome to Sveltebook, Harsh
     </h6>
 
-    
+    <UploadProfilePic />
 
     <div
       class="mt-4 grid grid-cols-1 gap-4 bg-white rounded-lg py-4 px-6 shadow"
