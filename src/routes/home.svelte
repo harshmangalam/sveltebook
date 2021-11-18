@@ -5,13 +5,15 @@
   import CreateStory from "$lib/components/Story/CreateStory.svelte";
   import Sidebar from "$lib/components/Sidebar/index.svelte";
   import SideLayout from "$lib/components/Layout/SideLayout.svelte";
+  import UploadProfilePic from "$lib/components/Home/UploadProfilePic.svelte";
+  import FriendListItem from "$lib/components/Friend/ListItem.svelte";
 </script>
 
-<SideLayout extraClasses="lg:block left-0 overflow-y-scroll">
+<SideLayout extraClasses="lg:block left-0">
   <Sidebar />
 </SideLayout>
 
-<SideLayout extraClasses="lg:block right-0">
+<!-- <SideLayout extraClasses="lg:block right-0">
   <div class="flex flex-col space-y-4">
     <h2 class="text-lg font-medium text-gray-500">Group conversations</h2>
     <button
@@ -36,11 +38,11 @@
       <span class="text-sm font-weight-500">Create New Group</span>
     </button>
   </div>
-</SideLayout>
+</SideLayout> -->
 
 <div class="flex justify-center">
   <div class="flex flex-col space-y-4 max-w-xl lg:max-w-lg xl:max-w-xl">
-    <CreateStory />
+    <!-- <CreateStory />
 
     <CreatePost />
 
@@ -50,8 +52,22 @@
       {#each [1, 2, 3, 4, 5, 6] as post}
         <PostCard />
       {/each}
+    </div> -->
+    <h6 class="font-medium text-2xl">
+      Welcome to Sveltebook, Harsh
+    </h6>
+
+    <UploadProfilePic />
+
+    <div
+      class="mt-4 grid grid-cols-1 gap-4 bg-white rounded-lg py-4 px-6 shadow"
+    >
+    <h3 class="font-medium text-xl">Add People You know</h3>
+      <ul class=" divide-y">
+        {#each [1, 2, 3, 4, 5, 6] as friend}
+          <FriendListItem />
+        {/each}
+      </ul>
     </div>
   </div>
 </div>
-
-

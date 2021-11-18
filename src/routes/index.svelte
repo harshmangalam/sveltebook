@@ -3,7 +3,7 @@
   
 </script>
 
-<div class="bg-gray-100 min-h-screen flex place-items-center px-2">
+<div class="pt-10">
   <div class="max-w-4xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <section class="max-w-md mx-auto">

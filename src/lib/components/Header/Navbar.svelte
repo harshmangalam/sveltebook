@@ -16,7 +16,7 @@
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
-            class="w-12 h-12"
+            class="w-14 h-14"
             viewBox="0 0 48 48"
             ><path
               fill="#039be5"
