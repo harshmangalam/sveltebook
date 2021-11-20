@@ -1,36 +1,5 @@
 <script>
-  let items = [
-    {
-      name: "Friend requests",
-      bgPosition: "0px -264px",
-      link: "/friends/requests",
-      showChev: true,
-    },
-    {
-      name: "Suggestions",
-      bgPosition: "0px -222px",
-      link: "/friends/suggestions",
-      showChev: true,
-    },
-    {
-      name: "All Friends",
-      bgPosition: "0px -243px",
-      link: "/friends/list",
-      showChev: true,
-    },
-    {
-      name: "Birthdays",
-      bgPosition: "0px -306px",
-      link: "/friends/birthdays",
-      showChev: false,
-    },
-    {
-      name: "Custom lists",
-      bgPosition: "0px -243px",
-      link: "/friends/friendlist",
-      showChev: true,
-    },
-  ];
+  export let items;
 </script>
 
 <ul>
