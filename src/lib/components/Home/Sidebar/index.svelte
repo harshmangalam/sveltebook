@@ -70,4 +70,10 @@
       />
     </ListItem>
   {/each}
+
+  <li class="pl-2 mt-6">
+      <p class="text-sm text-gray-600">
+        Sveltebook &copy; {new Date().getFullYear()}
+      </p>
+  </li>
 </ul>

@@ -1,3 +1,7 @@
+<script>
+  import PostLike from "./PostLike.svelte";
+</script>
+
 <section class="px-4">
   <div class="flex items-center justify-between">
     <div class="flex items-center space-x-2">
@@ -16,21 +20,10 @@
     </div>
   </div>
 
-  <hr class="mt-2 mb-1" />
+  <hr class="mt-4 mb-1" />
 
-  <div class="grid grid-cols-3 gap-0 pb-2">
-    <button
-      class="px-4 py-2 flex items-center  justify-center space-x-2 hover:bg-gray-100 rounded"
-    >
-      <div class="flex place-items-center">
-        <i
-          style=" background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/gWdQco0HMJM.png'); background-position: 0px -222px"
-          class="bg-no-repeat bg-auto w-5 h-5 inline-block"
-        />
-      </div>
-
-      <span class="text-gray-600 font-medium hidden md:block">Like</span>
-    </button>
+  <div class="grid grid-cols-3 gap-0 pb-2 relative">
+    <PostLike />
 
     <button
       class="px-4 py-2 flex items-center  justify-center space-x-2 hover:bg-gray-100 rounded"
