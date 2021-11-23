@@ -1,4 +1,5 @@
 <script>
+  import Logo from "../Shared/Logo.svelte";
   import Account from "./Account.svelte";
   import Menu from "./Menu.svelte";
   import Notification from "./Notification.svelte";
@@ -10,18 +11,18 @@
 <header class="bg-white shadow border-b sticky top-0 z-50">
   <nav class="px-2 py-2 md:py-0">
     <div class="flex items-center justify-between">
+      <!-- left section of navbar  -->
       <div class="flex items-center space-x-2">
-        <a
-          href="/"
-          class="w-10 h-10 text-2xl font-medium text-white bg-blue-500 rounded-full grid place-items-center"
-        >
-          S
-        </a>
-
+        <Logo />
         <Search />
       </div>
+      <!-- ---------------------------------------------- -->
+
+      <!-- middle section of navbar  -->
 
       <div class="md:flex items-center space-x-2 hidden">
+        <!-- home tab -->
+
         <a
           href="/"
           class={`md:px-4 lg:px-10 xl:px-10 py-3 hover:bg-gray-100 rounded-lg ${
@@ -42,8 +43,9 @@
           > -->
         </a>
 
+        <!-- friends tab  -->
         <a
-          href="/"
+          href="/friends"
           class="md:px-4 lg:px-10 xl:px-10 py-3 hover:bg-gray-100 rounded-lg"
         >
           <svg viewBox="0 0 28 28" class="" height="28" width="28"
@@ -55,8 +57,10 @@
           <!-- <svg viewBox="0 0 28 28" class="" height="28" width="28"><path d="M20.34 22.428c.077-.455.16-1.181.16-2.18 0-1.998-.84-3.981-2.12-5.41-.292-.326-.077-.838.36-.838h2.205C24.284 14 27 16.91 27 20.489c0 1.385-1.066 2.51-2.378 2.51h-3.786a.496.496 0 01-.495-.571zM20 13c-1.93 0-3.5-1.794-3.5-4 0-2.467 1.341-4 3.5-4s3.5 1.533 3.5 4c0 2.206-1.57 4-3.5 4zm-9.5-1c-2.206 0-4-2.019-4-4.5 0-2.818 1.495-4.5 4-4.5s4 1.682 4 4.5c0 2.481-1.794 4.5-4 4.5zm2.251 2A6.256 6.256 0 0119 20.249v1.313A2.44 2.44 0 0116.563 24H4.438A2.44 2.44 0 012 21.562v-1.313A6.256 6.256 0 018.249 14h4.502z"></path></svg> -->
         </a>
 
+        <!-- groups tab  -->
+
         <a
-          href="/"
+          href="/groups"
           class="md:px-4 lg:px-10 xl:px-10 py-3 hover:bg-gray-100 rounded-lg"
         >
           <svg
@@ -71,6 +75,7 @@
           <!-- <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 aaxa7vy3" height="28" width="28"><path d="M21.877 19 21.364 19C21.139 19 20.971 18.802 20.996 18.577 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.066 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.877 19ZM17.75 10.75C17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13 18.647 13 17.75 11.991 17.75 10.75ZM19.5 18.221C19.5 19.202 18.682 20 17.678 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.442 13.5 12.828 13.5L15.173 13.5C17.559 13.5 19.5 15.395 19.5 17.724L19.5 18.221ZM6.25 10.75C6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13 7.147 13 6.25 11.991 6.25 10.75ZM7.934 14.591C7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.991 18.461 7.004 18.577 7.03 18.802 6.861 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14L7.631 14C7.933 14 8.102 14.338 7.934 14.591ZM14 6C15.697 6 16.75 7.15 16.75 9 16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6ZM14 1C6.832 1 1 6.832 1 14 1 21.169 6.832 27 14 27 21.169 27 27 21.169 27 14 27 6.832 21.169 1 14 1Z"></path></svg> -->
         </a>
 
+        <!-- show left sidebar menus on small screen  -->
         <button
           class="md:px-4 lg:px-10 xl:px-10 py-3 hover:bg-gray-100 rounded-lg lg:hidden"
         >
@@ -86,6 +91,9 @@
         </button>
       </div>
 
+      <!-- ------------------------------------------------------- -->
+
+      <!-- right section navbar  -->
       <div class="flex items-center space-x-2">
         <a
           href="/"
@@ -94,8 +102,9 @@
           Find Friends
         </a>
 
+        <!-- profile link  -->
         <a
-          href="/"
+          href="/me"
           class="hidden xl:flex  items-center space-x-2 rounded-full hover:bg-gray-100 pl-1 pr-4 py-1"
         >
           <img
@@ -109,6 +118,7 @@
 
         <Menu />
 
+        <!-- messenger  -->
         <a href="/" class="p-3 bg-gray-200 rounded-full">
           <svg viewBox="0 0 28 28" class="w-5 h-5"
             ><path
@@ -120,6 +130,8 @@
         <Notification />
         <Account />
       </div>
+
+      <!-- ---------------------------------------------- -->
     </div>
   </nav>
 </header>

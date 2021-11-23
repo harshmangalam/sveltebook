@@ -40,16 +40,16 @@
 
 <div class="w-3/4">
   <div
-    class="absolute top-1/2 left-1/2 transform -translate-x-1/2"
+    class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/4"
   >
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center space-y-4">
         <img
       src="https://www.facebook.com/images/comet/empty_states_icons/people/null_states_people_gray_wash.svg"
       alt="No Requests"
       class="w-32"
     />
 
-    <p class="text-gray-500 font-medium text-lg">
+    <p class="text-gray-500 font-bold text-xl">
       When you have friend requests or suggestions, you'll see them here.
     </p>
     </div>
